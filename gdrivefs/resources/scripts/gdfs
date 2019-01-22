@@ -55,7 +55,7 @@ def _main():
         auth_storage_filepath=auth_storage_filepath,
         mountpoint=args.mountpoint,
         debug=gdrivefs.config.IS_DEBUG,
-        nothreads=gdrivefs.config.IS_DEBUG,
+        nothreads=gdrivefs.config.NO_THREADS,
         option_string=option_string)
 
 if __name__ == '__main__':
